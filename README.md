@@ -24,7 +24,7 @@ Strona wymaga **połączenia z Internetem**, ponieważ sciąga węwnętrzy serwe
 Instalowanie Dockera.   
 `sudo apt-get install docker`
 
-Zbudowanie obrazu z pliku [Dockerfile](.Aplikacja_Webowa_Etap_1/Dockerfile).  
+Zbudowanie obrazu z pliku [Dockerfile](Aplikacja_Webowa_Etap_1/Dockerfile).  
 `sudo docker build -t aplikacja .`
 
 Uruchomienie kontenera.  
