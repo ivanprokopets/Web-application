@@ -53,3 +53,14 @@ Informacja o plikach składających się na projekt.
 * **rundocker.sh** - Skrypt, uruchomiający strone
 
 ----------------------
+
+## Etap 2 - Formularz logowania
+Opracowanie modułu służącego do bezpiecznego logowania i wylogowywania użytkownika. Moduł logowania otrzymuje od użytkownika hasło i login – w przypadku poprawnych danych generowany jest identyfikator sesji. Dane sesyjne przechowywane są w bazie danych Redis. Należy opracować formularz pozwalający na przechowywanie przez użytkownika plików PDF w systemie. Pliki PDF powinny być dostępne do pobrania i serwowane przez bezstanową aplikację. Należy wykorzystać JWT z krótką datą ważności.
+
+### Istotne elementy
+* czy w ciasteczku generowany jest identyfikator sesji czy bezterminowy JWT (to drugie nie pozwala wylogować),
+* czy przy wylogowaniu usuwane są wpisy z Redis,
+* czy w formularzu jestenctype=multipart/form-data
+* czy aplikacja serwująca dostęp do pliku korzysta z sesji (czy innych informacji poza tymi w żetonie) - jeżeli tak, to źle,
+* czy żeton do pobrania ma krótki czas ważności (kilka minut)
+
