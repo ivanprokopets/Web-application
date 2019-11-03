@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="shortcut icon" href="image/vchod.png" type="image/x-vchod">
+    <!-- My CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Ajax script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</head>
+<noscript>
+    <div>Brak włączonej obsługi języka JavaScript</div>
+</noscript>
+
+<body>
+	<form action="sendpdf.html" id="registration" method="POST" enctype="multipart/form-data">
+        <ul>
+            <header>
+                <h1>Send PDF File</h1>
+            </header>
+            <legend>pola oznaczone <span class="star">*</span> są obowiązkowe</legend>
+
+            <li id="li_login">
+                <label>Choose PDF to upload <span class="star">*</span></label>
+                <input name="myFile" type="file" accept=".pdf" multiple>
+            </li>
+            <li id="li_submit">
+                <input type="button" id="Submit" value="Send">
+            </li>
+        </ul>
+    </form>
+    <ul>
+        <header>
+            <h1>Log out</h1>
+        </header>
+        <li id="li_submit">
+            <a href = "login.html"><input   type="button" id="Submit" value="Log out" ></a>
+        </li>
+    </ul>
+</body>
+</html>
