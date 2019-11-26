@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Error</title>
+    <link rel="shortcut icon" href= "{{ url_for('static',filename='image/vchod.png') }}" type="image/x-vchod">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<form action="">
+    <h1>Nie masz dostępu. Proszę o ponowne załogowanie albo rejestrację.</h1>
+    <ul>
+        <li id="li_submit">
+            <input type="button" id = "refresh" value="Logowanie" onclick="location.href='http://localhost:3001/';" />
+            <input type="button" id = "refresh" value="Rejestracja" onclick="location.href='http://localhost:3001/rejestracja';" />
+        </li>
+    </ul>
+</form>
+</body>
+</html>
