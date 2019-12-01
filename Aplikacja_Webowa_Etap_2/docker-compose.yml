@@ -1,0 +1,28 @@
+version: '2'
+services:
+  client:
+    restart: always
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile
+    command: []
+    ports:
+      - "5001:80"
+    volumes:
+      - ./client:/app
+  client_redis:
+    image: "redis:alpine"
+    command: --port 6381
+  serwer:
+    restart: always
+    build:
+      context: ./serwer
+      dockerfile: ./Dockerfile
+    command: []
+    ports:
+      - "5000:80"
+    volumes:
+      - ./serwer:/app
+  serwer_redis:
+    image: "redis:alpine"
+    command: --port 6380
