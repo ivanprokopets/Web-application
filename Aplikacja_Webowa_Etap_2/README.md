@@ -1,4 +1,4 @@
-### Instruction
+# Instruction
 
 Żeby uruchomić aplikacje, musisz postępować dokładnie następującymi krokami:
 1. `git clone https://github.com/ivanprokopets/Web-application.git`  
