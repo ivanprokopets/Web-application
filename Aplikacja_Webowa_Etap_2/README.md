@@ -24,3 +24,7 @@ Jeżeli chcesz dodać innych użytkowników po przez Pytonowski code, proszę us
 
 DONE!
 =)
+Przydatne linki: 
+1) https://medium.com/@terrillowalls/python3-flask-and-docker-in-production-the-easy-way-2ce8080d4f14
+2) https://bitbucket.org/zespoll/notes_from_classes/src/master/#markdown-header-lab-1-docker
+3) https://github.com/bchaber/di1541/tree/master/L4
