@@ -23,7 +23,7 @@ Baza uzytkowników:
 Jeżeli chcesz dodać innych użytkowników po przez Pytonowski code, proszę usunąć plik [login](./client/static/script_login.js). Bo w tym pliku jest napisana walidacja użytkowników.
 
 DONE!
-=)
+=)  
 Przydatne linki: 
 1) https://medium.com/@terrillowalls/python3-flask-and-docker-in-production-the-easy-way-2ce8080d4f14
 2) https://bitbucket.org/zespoll/notes_from_classes/src/master/#markdown-header-lab-1-docker
