@@ -64,4 +64,6 @@ Opracowanie modułu służącego do bezpiecznego logowania i wylogowywania użyt
 * czy aplikacja serwująca dostęp do pliku korzysta z sesji (czy innych informacji poza tymi w żetonie) - jeżeli tak, to źle,
 * czy żeton do pobrania ma krótki czas ważności (kilka minut).
 
+Prosze przejsc tutaj [Etap_2](./Aplikacja_Webowa_Etap_2)
+
 
