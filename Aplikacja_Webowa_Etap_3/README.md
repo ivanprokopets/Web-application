@@ -28,4 +28,14 @@ Zeby uruchomic, po prostu napisz w katalogu test
 
 W przeglądarkie proszę wejść pod adresy:  
 http://localhost:8080/front  
-http://localhost:8080/api  
+http://localhost:8080/api 
+
+
+## Simple Blueprint with 2 applications
+Zeby uruchomic, po prostu napisz w katalogu test
+`sudo docker-compose up`  
+
+W przeglądarkie proszę wejść pod adresy:  
+http://localhost:8080/  
+http://localhost:8080/front/  
+http://localhost:8080/api/   
