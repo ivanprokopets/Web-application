@@ -21,3 +21,11 @@
 4. W przegłądarkie proszę wejść pod adress:  
 http://0.0.0.0/
 
+## Simple app with 1 server for 2 applikation
+
+Zeby uruchomic, po prostu napisz w katalogu test  
+`sudo docker-compose up`  
+
+W przeglądarkie proszę wejść pod adresy:  
+http://localhost:8080/front  
+http://localhost:8080/api  
