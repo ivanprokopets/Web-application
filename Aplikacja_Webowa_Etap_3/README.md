@@ -7,7 +7,7 @@
 * dodawanie, pobieranie i usuwanie plików.
 
 ## # Instruction
-Czytaj instruction.pdf
+!!!Czytaj instruction.pdf!!!    
 Żeby uruchomić aplikacje, musisz postępować dokładnie następującymi krokami:
 1. `git clone https://github.com/ivanprokopets/Web-application.git`  
 2. `cd Web-application/Aplikacja_Webowa_Etap_3`  
