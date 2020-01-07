@@ -1,0 +1,12 @@
+version: "3"
+services:
+    web:
+      build: .
+      ports:
+        - "5000:80"
+      volumes:
+        - ./P3:/P3
+      environment:
+        FLASK_ENV: development
+    redis:
+      image: "redis:alpine"
