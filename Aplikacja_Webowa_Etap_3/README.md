@@ -7,7 +7,7 @@
 * dodawanie, pobieranie i usuwanie plików.
 
 ## # Instruction
-
+Czytaj instruction.pdf
 Żeby uruchomić aplikacje, musisz postępować dokładnie następującymi krokami:
 1. `git clone https://github.com/ivanprokopets/Web-application.git`  
 2. `cd Web-application/Aplikacja_Webowa_Etap_3`  
@@ -39,3 +39,4 @@ W przeglądarkie proszę wejść pod adresy:
 http://localhost:8080/  
 http://localhost:8080/front/  
 http://localhost:8080/api/   
+
