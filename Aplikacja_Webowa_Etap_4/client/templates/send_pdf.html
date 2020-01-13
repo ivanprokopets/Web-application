@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Upload</title>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='image/vchod.png') }}" type="image/x-vchod">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+    <!-- Ajax script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='script_upload.js') }}"></script>
+</head>
+<noscript>
+    <div>Brak włączonej obsługi języka JavaScript</div>
+</noscript>
+
+<body>
+<section>
+    <form name="myForm" action="{{CDN}}/upload" onsubmit="return validateForm()" method="POST"
+          enctype="multipart/form-data">
+        <ul>
+            <header>
+                <h1>Send PDF File</h1>
+            </header>
+            <legend>pola oznaczone <span class="star">*</span> są obowiązkowe</legend>
+
+            <li id="li_login">
+                <label>Choose PDF to upload <span class="star">*</span></label>
+                <input name="file" id="file" type="file" accept=".pdf" onchange="show(this)" multiple>
+                <input type="hidden" name="token" id="token" value="{{upload_token}}"/>
+                <input type="hidden" name="callback" id="callback" value="{{WEB}}/callback"/>
+            </li>
+            <li id="li_submit">
+                <input type="submit" id="Submit" value="Send">
+            </li>
+            <li id="li_logout">
+                <a href="{{WEB}}/logout" id="logout"> Logout</a>
+            </li>
+        </ul>
+    </form>
+    <form action="{{WEB}}/auth0_logout">
+        <ul>
+            <li id="li_submitt">
+                <input type="submit" id="auth" value="Wyloguj sie z auth0.com">
+            </li>
+        </ul>
+    </form>
+    <ul>
+        {% for i in range(fids|length) %}
+        <li><a href="{{CDN}}/download/{{fids[i]}}?token={{download_tokens[i]}}&content_type={{content_type}}">{{filenames[i]}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+</body>
+</html>
