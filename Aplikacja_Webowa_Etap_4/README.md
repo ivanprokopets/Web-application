@@ -17,23 +17,14 @@
 4. W przegłądarkie proszę wejść pod adress:  
 http://localhost:5001/
 
-## Simple app with 1 server for 2 applikation
+## Baza użytkowników:
 
-Zeby uruchomic, po prostu napisz w katalogu test  
-`sudo docker-compose up`  
+Baza uzytkowników:
+1. Login: test,   password: test
+2. Login: ivan,   password: ivan
+3. Login: login,  password: password
 
-W przeglądarkie proszę wejść pod adresy:  
-http://localhost:8080/front  
-http://localhost:8080/api 
+Jeżeli chcesz dodać innych użytkowników po przez Pytonowski code, proszę usunąć plik [login](./client/static/script_login.js). Bo w tym pliku jest napisana walidacja użytkowników.
 
-
-## Simple Blueprint with 2 applications
-Zeby uruchomic, po prostu napisz w katalogu test
-`sudo docker-compose up`  
-
-W przeglądarkie proszę wejść pod adresy:  
-http://localhost:8080/  
-http://localhost:8080/front/  
-http://localhost:8080/api/   
-
-
+DONE!
+=)  
