@@ -27,4 +27,5 @@ Baza uzytkowników:
 Jeżeli chcesz dodać innych użytkowników po przez Pytonowski code, proszę usunąć plik [login](./client/static/script_login.js). Bo w tym pliku jest napisana walidacja użytkowników.
 
 DONE!
-=)  
+=)
+=
