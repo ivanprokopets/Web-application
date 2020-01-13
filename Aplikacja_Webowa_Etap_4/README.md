@@ -1,16 +1,12 @@
-# Opracowanie usługi sieciowej i klienta na urządzenie przenośne. 
-## Usługa sieciowa musi pozwalać na:
-* dodawanie pozycji bibliograficznej,
-* listowanie pozycji bibliograficznych,
-* usuwaniu pozycji bibliograficznych,
-* podpinaniu i odpinaniu plików przy pozycji bibliograficznej,
-* dodawanie, pobieranie i usuwanie plików.
+# Umożliwienie autoryzacji użytkownika poprzez serwer auth0.com oraz powiadomienia.
+## powiadomienia ze strony serwera o dodaniu nowych publikacji. 
+* Powiadomienia powinny pojawiać się we wszystkich aplikacjach, w których zalogowany jest użytkownik.
+* Powiadomienia powinny wyświetlać się tylko użytkownikowi, który jest zalogowany.
 
-## # Instruction
-!!!Czytaj instruction.pdf!!!    
+## # Instruction  
 Żeby uruchomić aplikacje, musisz postępować dokładnie następującymi krokami:
 1. `git clone https://github.com/ivanprokopets/Web-application.git`  
-2. `cd Web-application/Aplikacja_Webowa_Etap_3`  
+2. `cd Web-application/Aplikacja_Webowa_Etap_4`  
 3. `sudo docker-compose -f docker-compose.yml up -d --build`  
     3.1 Musisz wprowadzić swoje haslo od super użytkownika  
     3.2 Może wystąpić następujący problem podczas budowania redisa:  
@@ -19,7 +15,7 @@
 Żeby uniknąc go, musisz podłaczyć się do innej sieci, naprzykład rozdać wi-fi za pomocą komórki.
 
 4. W przegłądarkie proszę wejść pod adress:  
-http://0.0.0.0/
+http://localhost:5001/
 
 ## Simple app with 1 server for 2 applikation
 
