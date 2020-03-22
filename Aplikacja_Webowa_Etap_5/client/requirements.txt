@@ -1,0 +1,10 @@
+flask
+uuid
+pyjwt
+redis
+requests
+six
+authlib
+requests
+python-dotenv
+

@@ -1,0 +1,40 @@
+version: '3'
+services:
+  client:
+    restart: always
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile
+    command: []
+    ports:
+      - "5001:80"
+    volumes:
+      - ./client:/app
+  client_redis:
+    image: "redis:alpine"
+    command: --port 6381
+  serwer:
+    restart: always
+    build:
+      context: ./serwer
+      dockerfile: ./Dockerfile
+    command: []
+    ports:
+      - "5000:80"
+    volumes:
+      - ./serwer:/app
+  serwer_redis:
+    image: "redis:alpine"
+    command: --port 6380
+  p_3_web:
+    build: .
+    command: []
+    ports:
+      - "7001:8080"
+    volumes:
+      - ./P3:/P3
+    environment:
+      FLASK_ENV: development
+  p_3_redis:
+    image: "redis:alpine"
+    #command: --port 6379
